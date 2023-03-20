@@ -88,9 +88,9 @@ Scanner scanner = new Scanner(System.in);
 System.out.print("Nhap nha xuat ban K: ");
 String nhaXuatBanK = scanner.nextLine();
 
-System.out.println("Cac sach giao khoa cua nha xuat ban " + nhaXuatBanK + ":");
+System.out.println("Cac sach giao khoa cua nha xuat ban " + nhaXuatBan + ":");
 for (Sach sach : danhSachSach) {
-    if (sach instanceof SachGiaoKhoa && sach.getNhaXuatBan().equals(nhaXuatBanK)) {
+    if (sach instanceof SachGiaoKhoa && sach.getNhaXuatBan().equals(nhaXuatBan)) {
         System.out.println(sach.toString());
     }
 }
